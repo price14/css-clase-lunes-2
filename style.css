@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para pantallas mas pequeñas (hasta 600px)*/
+
+@media screen and (max-width:600px){
+    body{
+        font-size: 14px;
+}
+    h1{
+        font-size: 24px;
+}
+    img{
+        width: 100%;
+}
+}
+
+
+/*Estilos para pantallas medianas (601px a 1024px)*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    body{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    body{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    img{
+        width: 30%;
+    }
+}
